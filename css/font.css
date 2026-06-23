@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Primary;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Secondary;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+#navbar {
+    font-family: Secondary;
+}
