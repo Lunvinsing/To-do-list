@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Primary;
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+ul li {
+  list-style: none;
+  font-family: Primary;
+  padding: 10px 30px 10px 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  word-break: break-word;
+}
+
+ul li::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../assets/unchecked.png");
+  background-size: contain;
+  left: 10px;
+  top: 12px;
+}
+
+ul li span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 14px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background: url("../assets/check.png");
+  background-size: contain;
+}
