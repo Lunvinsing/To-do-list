@@ -39,8 +39,8 @@
   <div>
     <label for="hs-trailing-button-add-on" class="sr-only">Label</label>
     <div class="flex rounded-lg lg:w-180 w-full">
-      <input type="text" id="hs-trailing-button-add-on" name="hs-trailing-button-add-on" placeholder="Add your task" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line border-e-transparent rounded-s-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:z-10 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none">
-      <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none">
+      <input type="text" id="inputBox" name="hs-trailing-button-add-on" placeholder="Add your task" class="py-2.5 sm:py-3 px-4 block w-full bg-layer border-layer-line border-e-transparent rounded-s-lg sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:z-10 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none">
+      <button onclick="addTask()" type="button" class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none">
         Add
       </button>
 
@@ -50,9 +50,9 @@
 
   <div>
     <ul id="taskList">
-      <li class="check">Your task will appear here</li>
+      <!-- <li class="checked">Your task will appear here</li>
       <li>Your task will appear here</li>
-      <li>Your task will appear here</li>
+      <li>Your task will appear here</li> -->
 
     </ul>
   </div>
@@ -69,5 +69,6 @@
     </footer>
 
 
+  <script src="script.js"></script>
   </body>
 </html>
