@@ -3,7 +3,12 @@ const taskList = document.getElementById("taskList");
 
 function addTask() {
 if (inputBox.value === "") {
-    alert("Please enter a task");
+    Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Please enter a task!",
+});
+
 } else {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
