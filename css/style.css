@@ -6,11 +6,11 @@
 ul li {
   list-style: none;
   font-family: Primary;
-  padding: 10px;
+  padding: 10px 30px 10px 40px;
   user-select: none;
   cursor: pointer;
   position: relative;
-  padding-left: 40px;
+  word-break: break-word;
 }
 
 ul li::before {
@@ -23,7 +23,15 @@ ul li::before {
   background-size: contain;
   left: 10px;
   top: 12px;
-  /* filter: invert(1); */
+}
+
+ul li span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 14px;
 }
 
 ul li.checked {
