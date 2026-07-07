@@ -1,8 +1,9 @@
 const inputBox = document.getElementById("inputBox");
 const taskList = document.getElementById("taskList");
 
-function addTask() {
-if (inputBox.value === "") {
+
+const addTask = () => {
+    if (inputBox.value === "") {
     Swal.fire({
     icon: "error",
     title: "Oops...",
@@ -21,7 +22,9 @@ inputBox.value = "";
 saveTasks();
 }
 
-taskList.addEventListener("click", function(e) {
+
+
+taskList.addEventListener("click", (e) => {
 if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
     saveTasks();
@@ -31,12 +34,14 @@ if (e.target.tagName === "LI") {
 }
 });
 
-function saveTasks() {
-    localStorage.setItem("tasks", taskList.innerHTML);
+
+const saveTasks = () => {
+      localStorage.setItem("tasks", taskList.innerHTML);
 }
 
-function loadTasks() {
-    taskList.innerHTML = localStorage.getItem("tasks");
+
+const loadTasks = () => {
+      taskList.innerHTML = localStorage.getItem("tasks");
 }
 
 loadTasks();
